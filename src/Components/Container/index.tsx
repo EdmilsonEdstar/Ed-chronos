@@ -1,5 +1,5 @@
 import type React from "react";
-import style from "./Container.module.css"
+import style from "./style.module.css"
 
 type ContainerProps ={    // Definir que o componente ou a função Heading, 
     children : React.ReactNode;  // tem um elemento string, neste caso o children
@@ -9,9 +9,7 @@ export function Container(props: ContainerProps){ // props é para adicionar uma
     return( 
         <div className={style.container}>
             <div className={style.content}>
-                <section>
                     {props.children}
-                </section>
             </div>
         </div>
 
