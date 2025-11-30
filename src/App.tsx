@@ -1,7 +1,8 @@
 import "./styles/global.css"
 import "./styles/theme.css"
 import {Container} from "./Components/Container"
-import {Heading} from "./Components/Heading"
+import {Menu} from "./Components/Menu"
+import {Logo} from "./Components/Logo"
 
 export function App(){
 
@@ -9,11 +10,11 @@ export function App(){
   <>
       
     <Container>
-        <Heading>Logo</Heading>
+        <Logo />
     </Container>
 
     <Container>
-        <Heading>Menu</Heading>
+        <Menu />
     </Container>
 
 
