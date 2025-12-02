@@ -8,11 +8,25 @@ import { DefaultInput } from "./Components/DefaultInput"
 import { Cycles } from "./Components/Cycles"
 import {DefaultButton} from "./Components/DefaultButton"
 import { PlayCircleIcon } from "lucide-react"
+import { Footer } from "./Components/Footer"
+import { useState } from "react"
 
 export function App(){
 
+    const [numero, setNumero] = useState(0);
+
+    function mudarNumero(){
+        setNumero(numero+1);
+    }
+
+
   return(
   <>
+
+    <Container>
+        <button onClick={mudarNumero}>Enviar</button> 
+        <label htmlFor="">Número {numero}</label>
+    </Container>
       
     <Container>
         <Logo />
@@ -43,12 +57,14 @@ export function App(){
 
             <div className="formrow">
                <DefaultButton  icon={<PlayCircleIcon />} color="green" />
-               <DefaultButton  icon={<PlayCircleIcon />} color="red" />
             </div>
 
         </form>
     </Container>
 
+    <Container>
+       <Footer />
+    </Container>
 
   </>
   )

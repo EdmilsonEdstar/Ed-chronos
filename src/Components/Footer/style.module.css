@@ -1,0 +1,11 @@
+.footer{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    gap: 0.8rem;
+}
+footer a{
+    color: var(--text-default);
+    text-decoration: none;
+}
