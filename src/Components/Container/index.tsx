@@ -12,6 +12,7 @@ export function Container(props: ContainerProps){ // props é para adicionar uma
                     {props.children}
             </div>
         </div>
+        
 
     )
     // {props.children} serve para atribuir uma valor dentro da tag, ou seja adicionar um children(filho)

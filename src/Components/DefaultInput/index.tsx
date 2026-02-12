@@ -4,7 +4,7 @@ type DefaultInputProps ={
     id: string;
     lableText: string;
     type: 'text' | 'number';
-    placeholder: 'text' | 'number';
+    placeholder: string;
 }
 
 export function DefaultInput(props: DefaultInputProps){
